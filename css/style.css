@@ -38,6 +38,9 @@
   display: flex;
   align-items: center;
   gap: 20rem; }
+  @media screen and (max-width: 1440px) {
+    .hero-container {
+      gap: 10rem; } }
   .hero-container__text-box {
     display: flex;
     flex-direction: column;
@@ -71,6 +74,12 @@
     background-position: 100%; }
   .hero-container__img {
     width: 60rem; }
+    @media screen and (max-width: 1440px) {
+      .hero-container__img {
+        width: 50rem; } }
+
+* {
+  box-sizing: border-box; }
 
 html {
   margin: 0;
@@ -80,6 +89,12 @@ html {
   color: #212529;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 1440px) {
+    html {
+      font-size: 56.25%; } }
 
 main {
   width: 140rem; }
+  @media screen and (max-width: 1440px) {
+    main {
+      width: 120rem; } }

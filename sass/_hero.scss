@@ -3,6 +3,10 @@
   align-items: center;
   gap: 20rem;
 
+  @include laptop {
+    gap: 10rem;
+  }
+
   &__text-box {
     display: flex;
     flex-direction: column;
@@ -58,5 +62,9 @@
 
   &__img {
     width: 60rem;
+
+    @include laptop {
+      width: 50rem;
+    }
   }
 }
