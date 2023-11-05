@@ -23,10 +23,10 @@
   .nav-container__item a:hover,
   .nav-container__item a:active {
     cursor: pointer;
-    color: #51cf66; }
+    color: #37b24d; }
   .nav-container__btn {
     color: #f8f9fa;
-    background-color: #51cf66;
+    background-color: #37b24d;
     padding: 0.75em 1.5em;
     border-radius: 0.3em; }
     .nav-container__btn:hover {
@@ -49,7 +49,7 @@
     font-size: 6.4rem;
     letter-spacing: 2px;
     margin: 0;
-    color: #51cf66; }
+    color: #37b24d; }
   .hero-container__heading-secondary {
     font-size: 6.4rem;
     letter-spacing: 2px; }
@@ -59,7 +59,7 @@
   .hero-container__btn:visited, .hero-container__btn:link {
     text-decoration: none;
     color: #f8f9fa;
-    background: linear-gradient(120deg, #51cf66 0%, #51cf66 50%, #f03e3e 50%, #f03e3e 500%);
+    background: linear-gradient(120deg, #37b24d 0%, #37b24d 50%, #f03e3e 50%, #f03e3e 500%);
     background-size: 300%;
     padding: 1em 2em;
     text-align: center;
