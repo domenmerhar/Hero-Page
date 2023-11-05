@@ -21,6 +21,10 @@ html {
   @include laptop {
     font-size: 56.25%;
   }
+
+  @include tablet {
+    font-size: 62.5%;
+  }
 }
 
 main {
@@ -28,5 +32,9 @@ main {
 
   @include laptop {
     width: 120rem;
+  }
+
+  @include tablet {
+    width: 90rem;
   }
 }

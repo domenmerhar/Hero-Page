@@ -36,11 +36,17 @@
 
 .hero-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  gap: 20rem; }
+  gap: 20rem;
+  height: 100%; }
   @media screen and (max-width: 1440px) {
     .hero-container {
       gap: 10rem; } }
+  @media screen and (max-width: 1100px) {
+    .hero-container {
+      gap: 5rem; } }
   .hero-container__text-box {
     display: flex;
     flex-direction: column;
@@ -48,6 +54,9 @@
     gap: 1rem; }
     .hero-container__text-box * {
       margin: 0; }
+    @media screen and (max-width: 1100px) {
+      .hero-container__text-box {
+        margin-top: 5rem; } }
   .hero-container__heading-primary {
     font-size: 6.4rem;
     letter-spacing: 2px;
@@ -92,9 +101,15 @@ html {
   @media screen and (max-width: 1440px) {
     html {
       font-size: 56.25%; } }
+  @media screen and (max-width: 1100px) {
+    html {
+      font-size: 62.5%; } }
 
 main {
   width: 140rem; }
   @media screen and (max-width: 1440px) {
     main {
       width: 120rem; } }
+  @media screen and (max-width: 1100px) {
+    main {
+      width: 90rem; } }

@@ -1,10 +1,17 @@
 .hero-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 20rem;
+  height: 100%;
 
   @include laptop {
     gap: 10rem;
+  }
+
+  @include tablet {
+    gap: 5rem;
   }
 
   &__text-box {
@@ -15,6 +22,10 @@
 
     & * {
       margin: 0;
+    }
+
+    @include tablet {
+      margin-top: 5rem;
     }
   }
 
