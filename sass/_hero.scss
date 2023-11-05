@@ -1,0 +1,42 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & * {
+      margin: 0;
+    }
+  }
+
+  &__heading-primary {
+    font-size: 6.4rem;
+    letter-spacing: 2px;
+    margin: 0;
+    color: $green;
+  }
+
+  &__heading-secondary {
+    font-size: 6.4rem;
+    letter-spacing: 2px;
+  }
+
+  &__text {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  &__btn:visited,
+  &__btn:active {
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__img {
+    width: 60rem;
+  }
+}
