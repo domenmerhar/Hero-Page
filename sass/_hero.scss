@@ -27,6 +27,10 @@
     @include tablet {
       margin-top: 5rem;
     }
+
+    @include larger-phone {
+      margin-top: 0;
+    }
   }
 
   &__heading-primary {

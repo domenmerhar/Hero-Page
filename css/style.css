@@ -57,6 +57,9 @@
     @media screen and (max-width: 1100px) {
       .hero-container__text-box {
         margin-top: 5rem; } }
+    @media screen and (max-width: 900px) {
+      .hero-container__text-box {
+        margin-top: 0; } }
   .hero-container__heading-primary {
     font-size: 6.4rem;
     letter-spacing: 2px;
@@ -113,3 +116,6 @@ main {
   @media screen and (max-width: 1100px) {
     main {
       width: 90rem; } }
+  @media screen and (max-width: 900px) {
+    main {
+      width: 70rem; } }

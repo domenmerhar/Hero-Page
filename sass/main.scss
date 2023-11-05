@@ -37,4 +37,8 @@ main {
   @include tablet {
     width: 90rem;
   }
+
+  @include larger-phone {
+    width: 70rem;
+  }
 }
