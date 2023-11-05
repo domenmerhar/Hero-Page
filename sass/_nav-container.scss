@@ -1,0 +1,44 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    & * {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__item {
+    font-weight: 500;
+    transition: color 200ms;
+
+    &:hover {
+      cursor: pointer;
+      color: $green;
+    }
+  }
+
+  &__btn {
+    color: $white;
+    background-color: $green;
+    padding: 0.75em 1.5em;
+    border-radius: 0.3em;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $red;
+      transition: background-color 200ms;
+    }
+  }
+}
