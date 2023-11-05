@@ -13,12 +13,16 @@
     gap: 2rem; }
     .nav-container__list * {
       font-size: 1.6rem; }
-  .nav-container__item {
+  .nav-container__item a:visited,
+  .nav-container__item a:link {
+    text-decoration: none;
     font-weight: 500;
-    transition: color 200ms; }
-    .nav-container__item:hover {
-      cursor: pointer;
-      color: #51cf66; }
+    transition: color 200ms;
+    color: #212529; }
+  .nav-container__item a:hover,
+  .nav-container__item a:active {
+    cursor: pointer;
+    color: #51cf66; }
   .nav-container__btn {
     color: #f8f9fa;
     background-color: #51cf66;
