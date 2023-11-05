@@ -41,4 +41,8 @@ main {
   @include larger-phone {
     width: 70rem;
   }
+
+  @include phone {
+    width: 50rem;
+  }
 }
