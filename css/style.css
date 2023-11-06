@@ -36,17 +36,23 @@
 
 .hero-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   gap: 20rem;
   height: 100%; }
   @media screen and (max-width: 1440px) {
     .hero-container {
-      gap: 10rem; } }
+      margin-top: 6rem;
+      gap: 6rem; } }
   @media screen and (max-width: 1100px) {
     .hero-container {
       gap: 5rem; } }
+  @media screen and (max-width: 900px) {
+    .hero-container {
+      flex-direction: column;
+      gap: 5rem;
+      margin-top: 0; } }
   .hero-container__text-box {
     display: flex;
     flex-direction: column;
@@ -71,15 +77,30 @@
     @media screen and (max-width: 700px) {
       .hero-container__heading-primary {
         font-size: 4.8rem; } }
+    @media screen and (max-width: 900px) {
+      .hero-container__heading-primary {
+        align-self: center; } }
   .hero-container__heading-secondary {
     font-size: 6.4rem;
     letter-spacing: 2px; }
+    @media screen and (max-width: 1100px) {
+      .hero-container__heading-secondary {
+        font-size: 5.6rem; } }
     @media screen and (max-width: 700px) {
       .hero-container__heading-secondary {
         font-size: 4.8rem; } }
+    @media screen and (max-width: 900px) {
+      .hero-container__heading-secondary {
+        align-self: center; } }
   .hero-container__text {
     font-size: 3.2rem;
     font-weight: 600; }
+    @media screen and (max-width: 1100px) {
+      .hero-container__text {
+        font-size: 2.8rem; } }
+    @media screen and (max-width: 900px) {
+      .hero-container__text {
+        align-self: center; } }
     @media screen and (max-width: 700px) {
       .hero-container__text {
         font-size: 3.2rem; } }
@@ -94,7 +115,7 @@
     border-radius: 0.3em;
     margin-top: 2rem;
     transition: 500ms all; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       .hero-container__btn:visited, .hero-container__btn:link {
         align-self: center; } }
   .hero-container__btn:hover, .hero-container__btn:active {
@@ -104,9 +125,9 @@
     @media screen and (max-width: 1440px) {
       .hero-container__img {
         width: 50rem; } }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       .hero-container__img {
-        width: 40rem; } }
+        width: 30rem; } }
 
 * {
   box-sizing: border-box; }

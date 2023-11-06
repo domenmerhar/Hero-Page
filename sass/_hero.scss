@@ -1,17 +1,24 @@
 .hero-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   gap: 20rem;
   height: 100%;
 
   @include laptop {
-    gap: 10rem;
+    margin-top: 6rem;
+    gap: 6rem;
   }
 
   @include tablet {
     gap: 5rem;
+  }
+
+  @include larger-phone {
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 0;
   }
 
   &__text-box {
@@ -46,20 +53,38 @@
     @include phone {
       font-size: 4.8rem;
     }
+
+    @include larger-phone {
+      align-self: center;
+    }
   }
 
   &__heading-secondary {
     font-size: 6.4rem;
     letter-spacing: 2px;
 
+    @include tablet {
+      font-size: 5.6rem;
+    }
+
     @include phone {
       font-size: 4.8rem;
+    }
+    @include larger-phone {
+      align-self: center;
     }
   }
 
   &__text {
     font-size: 3.2rem;
     font-weight: 600;
+
+    @include tablet {
+      font-size: 2.8rem;
+    }
+    @include larger-phone {
+      align-self: center;
+    }
 
     @include phone {
       font-size: 3.2rem;
@@ -85,7 +110,7 @@
     margin-top: 2rem;
     transition: 500ms all;
 
-    @include phone {
+    @include larger-phone {
       align-self: center;
     }
   }
@@ -102,8 +127,8 @@
       width: 50rem;
     }
 
-    @include phone {
-      width: 40rem;
+    @include larger-phone {
+      width: 30rem;
     }
   }
 }
